@@ -9,8 +9,10 @@
 */
 int main(void)
 {char a = 'a';
-for (int i = 0; i < 26 ; i++)
+int i = 0;
+for (i = 0; i < 26 ; i++)
 printf("%c\n", a + i);
 return (0);
 }
+
 
