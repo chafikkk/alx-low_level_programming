@@ -3,25 +3,23 @@
 #include <stdio.h>
 
 /**
-*main - Printfs all possible different combinations of two digits.
+*main - Printfs all the numbers of base 16 in lowercase, followed by a new line
 *
 * Return: Always 0.
 */
 int main(void)
 {
 int i;
-int j;
-for (j = 48; j < 58 ; j++)
+for (i = 48; i < 58 ; i++)
 {
-for (i = (j + 1); i < 58 ; i++)
-{
-putchar(j);
 putchar(i);
-if (j != 56)
-putchar(',');
-putchar(' ');
 }
+for (i = 97; i < 103 ; i++)
+{
+putchar(i);
 }
+putchar('\n');
 return (0);
 }
+
 
