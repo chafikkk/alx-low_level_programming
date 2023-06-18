@@ -18,8 +18,10 @@ for (i = (j + 1); i < 58 ; i++)
 putchar(j);
 putchar(i);
 if (j != 56)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
