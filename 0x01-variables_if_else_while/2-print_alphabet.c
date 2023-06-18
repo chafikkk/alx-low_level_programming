@@ -12,6 +12,8 @@ int main(void)
 int i = 0;
 for (i = 0; i < 26 ; i++)
 printf("%c\n", a + i);
+for (i = 0; i < 26 ; i++)
+printf("%c", a + i);
 return (0);
 }
 
