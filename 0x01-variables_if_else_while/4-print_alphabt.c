@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 /**
-*main - Printfs the alphabet in lowercase, and then in uppercase
+*main - Printfs the alphabet in lowercase except q and e
 *
 * Return: Always 0.
 */
 int main(void)
 {char a = 'a';
-char A = 'A';
 int i = 0;
 for (i = 0; i < 26 ; i++)
+{
+if ((a + i) != 'q' && (a + i) != 'e')
 putchar(a + i);
-for (i = 0; i < 26 ; i++)
-putchar(A + i);
+}
 putchar('\n');
 return (0);
 }
