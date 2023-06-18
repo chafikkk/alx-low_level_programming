@@ -11,9 +11,8 @@ int main(void)
 {char a = 'a';
 int i = 0;
 for (i = 0; i < 26 ; i++)
-printf("%c\n", a + i);
-for (i = 0; i < 26 ; i++)
 printf("%c", a + i);
+putchar('\n');
 return (0);
 }
 
