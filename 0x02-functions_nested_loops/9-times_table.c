@@ -27,6 +27,7 @@ _putchar(((res % 10) + 48));
 if (j != 9)
 {
 _putchar(',');
+if (j != 0)
 _putchar(' ');
 }
 }
