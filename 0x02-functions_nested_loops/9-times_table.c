@@ -18,7 +18,6 @@ putchar(' ');
 putchar(((res % 10) + 48));
 if (j != 9)
 putchar(',');
-putchar(' ');
 }
 putchar('\n');
 }
