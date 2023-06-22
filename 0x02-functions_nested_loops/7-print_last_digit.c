@@ -11,6 +11,8 @@ int lst;
 if (n < 0)
 n = -n;
 lst = n % 10;
+if (lst < 0)
+lst = -lst;
 _putchar(lst + '0');
 return (lst);
 }
