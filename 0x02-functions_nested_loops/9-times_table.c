@@ -25,8 +25,10 @@ _putchar(' ');
 _putchar(((res % 10) + 48));
 }
 if (j != 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 }
 _putchar('\n');
 }
