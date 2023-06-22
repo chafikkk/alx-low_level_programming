@@ -12,14 +12,15 @@ for (j = 0; j < 10; j++)
 {
 res = i * j;
 if (res >= 12)
-putchar(((res / 10) + 48));
+_putchar(((res / 10) + 48));
 else
-putchar(' ');
-putchar(((res % 10) + 48));
+_putchar(' ');
+_putchar(((res % 10) + 48));
 if (j != 9)
-putchar(',');
+_putchar(',');
+_putchar(' ');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 
