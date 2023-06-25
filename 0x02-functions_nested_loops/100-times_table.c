@@ -17,10 +17,15 @@ res = i * j;
 printf("%d", res);
 if (j != n)
 {
+if (res >= 100)
+printf(",");
+else
+{
 if (res >= 10)
 printf(", ");
 else
 printf(",  ");
+}
 }
 }
 	printf("\n");
