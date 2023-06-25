@@ -8,7 +8,7 @@
 
 void print_times_table(int n)
 {
-int i, j, res;
+int i, j, res, rb;
 if (n >= 0 && n <= 15)
 {
 for (i = 0; i <= n; i++)
@@ -16,18 +16,19 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 res = i * j;
+rb = i * (j - 1);
+
 printf("%d", res);
-if (j != n)
+if (j != 0)
 {
-if (res >= 100)
-printf(", ");
-else
-{
-if (res >= 10)
-printf(",  ");
-else
+if (rb <= 9 && res < 10)
 printf(",   ");
-}
+if (rb <= 9 && res >= 10)
+printf(",  ");
+if (rb >= 10 && res >= 10 && res < 100)
+printf(",  ");
+if (rb > 90 && res >= 100)
+printf(", ")
 }
 }
 	printf("\n");
