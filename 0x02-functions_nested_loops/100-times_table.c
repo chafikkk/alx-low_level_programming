@@ -17,8 +17,6 @@ for (j = 0; j <= n; j++)
 {
 res = i * j;
 rb = i * (j - 1);
-
-printf("%d", res);
 if (j != 0)
 {
 if (rb <= 9 && res < 10)
@@ -29,6 +27,7 @@ if (rb >= 10 && res >= 10 && res < 100)
 printf(",  ");
 if (rb > 90 && res >= 100)
 printf(", ");
+printf("%d", res);
 }
 }
 	printf("\n");
