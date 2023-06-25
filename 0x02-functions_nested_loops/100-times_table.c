@@ -27,8 +27,8 @@ if (rb >= 10 && res >= 10 && res < 100)
 printf(",  ");
 if (rb > 90 && res >= 100)
 printf(", ");
-printf("%d", res);
 }
+printf("%d", res);
 }
 	printf("\n");
 }
