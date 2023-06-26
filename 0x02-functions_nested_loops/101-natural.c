@@ -1,9 +1,9 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * sum_multible - computes and prints the sum of
- *all the multiples of 3 or 5 below 1024
+ * all the multiples of 3 or 5 below 1024
  */
 
 void sum_multible(void)
