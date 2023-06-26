@@ -17,8 +17,8 @@ for (i = 0; i <= 50; i++)
 sum = a + b;
 a = b;
 b = sum;
-printf("%d, ", sum);
+printf("%lu, ", sum);
 }
-printf("lu", sum);
+printf("\n");
 return (0);
 }
