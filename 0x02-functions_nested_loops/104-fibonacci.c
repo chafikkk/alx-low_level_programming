@@ -22,6 +22,7 @@ for (i = 0; i <= 91; i++)
 sum = a + b;
 a = b;
 b = sum;
+if (i != 91)
 printf("%lu, ", sum);
 }
 a1 = a / mil;
