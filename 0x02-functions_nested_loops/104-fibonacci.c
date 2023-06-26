@@ -7,42 +7,38 @@
  *
  * Return:  (Success)
  */
-
 int main(void)
 {
-	unsigned long int i;
-	unsigned long int bef = 1;
-	unsigned long int aft = 2;
-	unsigned long int l = 1000000000;
-	unsigned long int bef1;
-	unsigned long int bef2;
-	unsigned long int aft1;
-	unsigned long int aft2;
-
-	printf("%lu", bef);
-
-	for (i = 1; i < 91; i++)
-	{
-		printf(", %lu", aft);
-		aft += bef;
-		bef = aft - bef;
-	}
-
-	bef1 = (bef / l);
-	bef2 = (bef % l);
-	aft1 = (aft / l);
-	aft2 = (aft % l);
-
-	for (i = 92; i < 99; ++i)
-	{
-		printf(", %lu", aft1 + (aft2 / l));
-		printf("%lu", aft2 % l);
-		aft1 = aft1 + bef1;
-		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef2;
-		bef2 = aft2 - bef2;
-	}
-	printf("\n");
-	return (0);
+int i;
+unsigned long  a, b, sum;
+unsigned long mil;
+unsigned long a1, a2, b1, b2;
+mil = 1000000000;
+a = 0;
+b = 1;
+sum = 0;
+for (i = 0; i <= 92; i++)
+{
+sum = a + b;
+a = b;
+b = sum;
+printf("%lu, ", sum);
 }
-
+a1 = a / mil;
+a2 = a % mil;
+b1 = b / mil;
+b2 = b % mil;
+for (i = 93; i <= 98; i++)
+{
+printf("%lu", b1 + (b2 / mil));
+printf("%lu", b2 % mil);
+b1 = b1 + a1;
+a1 = b1 - a1;
+b2 = b2 + a2;
+a2 = b2 - a2;
+if (i != 98)
+printf(", ");
+}
+printf("\n");
+return (0);
+}
