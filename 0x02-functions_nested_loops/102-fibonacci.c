@@ -19,6 +19,6 @@ a = b;
 b = sum;
 printf("%d, ", sum);
 }
-printf("\n");
+printf("lu", sum);
 return (0);
 }
