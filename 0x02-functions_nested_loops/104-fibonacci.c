@@ -17,7 +17,7 @@ mil = 1000000000;
 a = 0;
 b = 1;
 sum = 0;
-for (i = 0; i <= 92; i++)
+for (i = 0; i < 91; i++)
 {
 sum = a + b;
 a = b;
@@ -28,7 +28,7 @@ a1 = a / mil;
 a2 = a % mil;
 b1 = b / mil;
 b2 = b % mil;
-for (i = 93; i <= 98; i++)
+for (i = 92; i <= 98; i++)
 {
 printf("%lu", b1 + (b2 / mil));
 printf("%lu", b2 % mil);
