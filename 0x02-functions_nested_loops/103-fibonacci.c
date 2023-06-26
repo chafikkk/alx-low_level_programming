@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-int i;
 unsigned long a, b, sum, total;
 a = 0;
 b = 1;
@@ -21,4 +20,5 @@ total += sum;
 } while (sum <= 4000000);
 printf("%lu", total);
 printf("\n");
+return (0);
 }
