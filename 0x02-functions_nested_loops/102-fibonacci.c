@@ -17,7 +17,9 @@ for (i = 1; i <= 50; i++)
 sum = a + b;
 a = b;
 b = sum;
-printf("%lu, ", sum);
+printf("%lu", sum);
+if (i != 50)
+printf(", ");
 }
 printf("\n");
 return (0);
