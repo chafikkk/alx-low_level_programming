@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-int i, a, b, sum;
+int i;
+long long int a, b, sum;
 a = 0;
 b = 1;
 for (i = 0; i <= 50; i++)
