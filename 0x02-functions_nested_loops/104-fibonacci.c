@@ -28,7 +28,7 @@ a1 = a / mil;
 a2 = a % mil;
 b1 = b / mil;
 b2 = b % mil;
-for (i = 92; i <= 98; i++)
+for (i = 92; i < 99; ++i)
 {
 printf("%lu", b1 + (b2 / mil));
 printf("%lu", b2 % mil);
